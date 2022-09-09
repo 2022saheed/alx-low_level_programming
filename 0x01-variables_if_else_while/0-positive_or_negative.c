@@ -1,21 +1,32 @@
-#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
-* main - program that prints Holberton.
-*
-* Return: int
+* main - assign a random number to the variable n each time it is executed
+* if the number is greater than 0: is positive, if the number is 0: is zero
+* if the number is less than 0: is negative, followed by a new line
+* Return: 0
 */
 
 int main(void)
 {
-int n = 0;
-char str_hbt[9] = "Holberton";
+int n;
 
-while (n < 9)
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (n > 0)
 {
-_putchar(str_hbt[n]);
-n += 1;
+printf("%d is positive\n", n);
 }
-_putchar('\n');
+else if (n < 0)
+{
+printf("%d is negative\n", n);
+}
+else
+{
+printf("%d is zero\n", n);
+}
+
 return (0);
 }
