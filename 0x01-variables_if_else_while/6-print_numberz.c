@@ -15,6 +15,6 @@ while (n <= 57)
 putchar(n);
 n += 1;
 }
-write("\n");
+fwrite("\n");
 return (0);
 }
