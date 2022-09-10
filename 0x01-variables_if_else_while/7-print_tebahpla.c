@@ -13,6 +13,6 @@ while (n > 96)
 putchar(n);
 n -= 1;
 }
-putchar('n');
+putchar(n);
 return (0);
 }
