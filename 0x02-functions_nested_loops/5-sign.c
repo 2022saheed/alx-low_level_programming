@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* c function that prints the sign of a number..
+* Description: c function that prints the sign of a number..
 * the input number to check
-* Return: int.
+* Return: 0.
 */
 
 int print_sign(int n)
@@ -14,7 +14,7 @@ _putchar(43);
 return (1);
 }
 else if (n < 0)
-    {
+{
 _putchar(45);
 return (-1);
 }
