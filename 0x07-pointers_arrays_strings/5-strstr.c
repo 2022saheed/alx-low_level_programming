@@ -17,7 +17,7 @@ char *tmp;
 while (*haystack != '\0')
     {
 res = haystack;
-tmp  = needle;
+tmp = needle;
 
 while (*tmp == *haystack && *tmp != '\0'
 && *haystack != '\0')
