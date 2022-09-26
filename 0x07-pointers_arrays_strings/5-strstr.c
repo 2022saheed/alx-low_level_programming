@@ -12,20 +12,20 @@
 char *_strstr(char *haystack, char *needle)
 {
 char *res;
-char *tmp;
+char *aux;
 
 while (*haystack != '\0')
     {
 res = haystack;
-tmp = needle;
+aux = needle;
 
-while (*tmp == *haystack && *tmp != '\0'
+while (*aux == *haystack && *aux != '\0'
 && *haystack != '\0')
 {
 haystack++;
-tmp++;
+aux++;
 }
-if (*tmp == '\0')
+if (*aux == '\0')
 return (res);
 haystack = res + 1;
 }
