@@ -30,7 +30,7 @@ else
 printf("Error\n");
 return (1);
 }
-res = (num1 * num2);
+res = (num1 *num2);
 count++;
 }
 printf("%d\n", res);
