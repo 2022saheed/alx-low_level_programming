@@ -12,38 +12,38 @@
 
 int main(int argc, char *argv[])
 {
-int amount, coins;
+int amount, cents;
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
 amount = atoi(argv[1]);
-coins = 0;
+cents = 0;
 if (amount > 25)
 {
 while (amount >= 25)
-amount -= 25, coins++;
+amount -= 25, cents++;
 }
 if (amount > 10 && amount < 25)
 {
 while (amount >= 10)
-amount -= 10, coins++;
+amount -= 10, cents++;
 }
 if (amount > 5 && amount < 10)
 {
 while (amount >= 5)
-amount -= 5, coins++;
+amount -= 5, cents++;
 }
 if (amount > 2 && amount < 5)
 {
 while (amount >= 2)
-amount -= 2, coins++;
+amount -= 2, cents++;
 }
 if (amount == 1 || amount == 2 || amount == 5 || amount == 10 || amount == 25)
 {
-coins++;
+cents++;
 }
-printf("%d\n", coins);
+printf("%d\n", cents);
 return (0);
 }
