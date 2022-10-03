@@ -1,9 +1,8 @@
 #include <stdlib.h>
 
 /**
-* alloc_grid - c function that returns a pointer to
-* a 2 dimensional
-*  array of integers
+* alloc_grid - c function returns a pointer to a 2
+* dimensional array of integers
 * @width: input row
 * @height: input col
 * Return: int
@@ -19,9 +18,8 @@ if (width <= 0 || height <= 0)
 return (NULL);
 
 /**
-* using typecasting int * to dereference values
+* using typecasting (int *) to dereference values
 */
-
 arr = malloc(height * sizeof(int *));
 if (arr == NULL)
 return (NULL);
