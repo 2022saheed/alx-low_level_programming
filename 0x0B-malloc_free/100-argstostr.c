@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
-* argstostr - c function that concatenates all the arguments of  one's program
+* argstostr - c function that concatenates all the arguments of your program
 * @ac: argument count
 * @av: argument vector
 * Return: char
