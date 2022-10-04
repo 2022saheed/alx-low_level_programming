@@ -18,6 +18,8 @@ return (NULL);
 size = 0;
 /**
 * count the number of chars in each string
+* @ac: arguement count
+* @av: pointer to arguements
 */
 
 for (i = 0; i < ac; i++)
@@ -30,6 +32,8 @@ size++;
 
 /**
 * allocate memory for total number of chars and
+* @ac: arguement count
+* @av: pointer to arguements
 * new line for each word
 */
 
