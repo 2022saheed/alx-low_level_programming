@@ -25,7 +25,7 @@ cont++;
 cont++;
 }
 cont += 1;
-ar = malloc(cont *sizeof(char));
+ar = malloc(sizeof(char) * cont);
 if (ar == NULL)
 return (NULL);
 str = ar;
