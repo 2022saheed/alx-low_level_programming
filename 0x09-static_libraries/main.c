@@ -1,7 +1,19 @@
 #include "main.h"
-
-int main(void)
+#include <stdio.h>
+  
+int main()
 {
-puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+  
+/**
+* Get the character to be written
+*/
+
+char ch = 'G';
+
+/**
+* Write the Character to stdout
+*/
+putchar(ch);
+  
 return (0);
 }
