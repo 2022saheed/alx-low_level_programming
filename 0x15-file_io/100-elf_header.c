@@ -195,7 +195,7 @@ switch (eh.e_version)
 {
 case EV_NONE:
 printf("Invalid version\n");
-beak;
+break;
 
 default:
 printf("%d (Current)\n", 1);
