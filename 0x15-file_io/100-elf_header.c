@@ -5,7 +5,7 @@
 * @fd: file descriptor
 * @elf_header: pointer to hold Elf32_Ehdr elements
 * Return: nothing
-**/
+*/
 void read_elf_header(int32_t fd, Elf32_Ehdr *elf_header)
 {
 if (elf_header == NULL)
@@ -13,10 +13,10 @@ if (elf_header == NULL)
 dprintf(STDERR_FILENO, "header null Unable to read elf\n");
 exit(98);
 }
-/*SEEK_SET: The file offset is set to offset bytes. */
+/** SEEK_SET: The file offset is set to offset bytes. */
 if (lseek(fd, (off_t)0, SEEK_SET) != (off_t)0)
 {
-/* if could not reposition the file offset. */
+/** if could not reposition the file offset. */
 dprintf(STDERR_FILENO, "offset Unable to read elf\n");
 exit(98);
 }
@@ -36,7 +36,8 @@ exit(98);
 */
 bool is_ELF(Elf32_Ehdr eh)
 {
-/* ELF magic bytes are 0x7f,'E','L','F'
+/** ELF magic bytes are 0x7f,'E','L','F'
+*
 * Using  octal escape sequence to represent 0x7f
 */
 if (eh.e_ident[0] == 0x7f && eh.e_ident[1] == 'E' &&
